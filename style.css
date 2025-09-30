@@ -74,9 +74,72 @@ nav a:hover {
   display: flex;
   justify-content: center;
   width: 100%;
+  margin-top: -60vh;
+  padding-top: 0;
 }
 
 model-viewer {
   width: 60%;
   height: 800px;
+}
+
+
+
+/* Hero Section */
+.hero-section {
+  position: relative;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  padding-left: 80px;
+  overflow: hidden;
+  transition: opacity 0.3s;
+}
+
+.hero-content {
+  position: relative;
+  z-index: 2;
+  max-width: 800px;
+}
+
+
+
+.hero-title {
+  font-size: 72px;
+  font-weight: 800;
+  margin-bottom: 20px;
+  line-height: 1.1;
+  animation: fadeInUp 1s ease-out 0.2s both;
+}
+
+.highlight {
+  background: linear-gradient(135deg, #7c3aed, #a78bfa);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.hero-subtitle {
+  font-size: 24px;
+  color: #ccc;
+  font-weight: 300;
+  line-height: 1.6;
+  animation: fadeInUp 1s ease-out 0.4s both;
+}
+
+
+/* Responsive Hero */
+@media (max-width: 768px) {
+  .hero-section {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+  
+  .hero-title {
+    font-size: 48px;
+  }
+  
+  .hero-subtitle {
+    font-size: 18px;
+  }
 }
