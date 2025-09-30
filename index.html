@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Header Fixe Exemple</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <div class="logo">
+      <img src="img/logo 2.png" alt="logo">
+      <span>Nawa | Portfolio</span>
+    </div>
+    <nav>
+      <ul>
+        <li><a href="#about">À propos</a></li>
+        <li><a href="#experiences">Expériences</a></li>
+        <li><a href="#projects">Projets</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <div class="container">
+
+    <!-- Intégration du modèle 3D avec model-viewer -->
+    <model-viewer id="model" src="3d models/gaming_desktop_pc.glb" autoplay camera-controls disable-zoom disable-pan></model-viewer>
+
+  </div>
+  
+  <script type="module" src="https://ajax.googleapis.com/ajax/libs/model-viewer/4.0.0/model-viewer.min.js"></script>
+
+  <script>
+    // Désactiver le clic droit sur le modèle 3D
+    document.getElementById('model').addEventListener('contextmenu', (event) => {
+      event.preventDefault(); // Empêche l'affichage du menu contextuel
+    });
+  </script>
+</body>
+</html>
