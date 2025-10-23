@@ -1,4 +1,4 @@
-// Fonction pour ouvrir la modal
+
 function openModal(projectId) {
   const modal = document.getElementById("modal-" + projectId);
   if (modal) {
@@ -7,7 +7,7 @@ function openModal(projectId) {
   }
 }
 
-// Fonction pour fermer la modal
+
 function closeModal(projectId) {
   const modal = document.getElementById("modal-" + projectId);
   if (modal) {
@@ -67,7 +67,7 @@ mobileMenu.addEventListener("click", (e) => {
 
 
 
-// Initialiser EmailJS avec ta clé publique
+
 emailjs.init("YP022HH4S_MIE2f--"); 
 
 const contactForm = document.getElementById("contact-form");
@@ -92,8 +92,8 @@ if (contactForm) {
 
     try {
       const response = await emailjs.send(
-        "service_29uh90c",       // ✅ Ton Service ID
-        "template_69pdnln",     // ✅ Ton Template ID
+        "service_29uh90c",       
+        "template_69pdnln",     
         {
           from_name: formData.name,
           from_email: formData.email,
@@ -114,8 +114,8 @@ if (contactForm) {
       btnText.textContent = "Envoyer le message";
 
       setTimeout(() => {
-        formMessage.className = "form-message"; // Réinitialise la classe
-        formMessage.textContent = ""; // Vide le message
+        formMessage.className = "form-message"; 
+        formMessage.textContent = ""; 
       }, 5000);
 
     }
