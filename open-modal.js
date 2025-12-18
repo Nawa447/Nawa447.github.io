@@ -1,4 +1,3 @@
-
 function openModal(projectId) {
   const modal = document.getElementById("modal-" + projectId);
   if (modal) {
@@ -6,7 +5,6 @@ function openModal(projectId) {
     document.body.style.overflow = "hidden";
   }
 }
-
 
 function closeModal(projectId) {
   const modal = document.getElementById("modal-" + projectId);
@@ -64,10 +62,6 @@ mobileMenu.addEventListener("click", (e) => {
   }
 });
 
-
-
-
-
 emailjs.init("YP022HH4S_MIE2f--"); 
 
 const contactForm = document.getElementById("contact-form");
@@ -78,6 +72,13 @@ const btnIcon = document.getElementById("btn-icon");
 if (contactForm) {
   contactForm.addEventListener("submit", async (e) => {
     e.preventDefault();
+
+    // Honeypot anti-spam 
+    const honeypot = document.getElementById("website");
+    if (honeypot && honeypot.value !== "") {
+      return;
+    }
+    // Fin honeypot
 
     const formData = {
       name: document.getElementById("name").value,
@@ -105,10 +106,12 @@ if (contactForm) {
       formMessage.textContent = "✅ Message envoyé avec succès !";
       formMessage.className = "form-message success";
       contactForm.reset();
+
     } catch (error) {
       console.error("Erreur :", error);
       formMessage.textContent = "❌ Une erreur est survenue. Essayez à nouveau.";
       formMessage.className = "form-message error";
+
     } finally {
       submitBtn.disabled = false;
       btnText.textContent = "Envoyer le message";
@@ -117,7 +120,6 @@ if (contactForm) {
         formMessage.className = "form-message"; 
         formMessage.textContent = ""; 
       }, 5000);
-
     }
   });
 }
