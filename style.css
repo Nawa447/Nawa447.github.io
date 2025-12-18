@@ -2810,3 +2810,37 @@ nav a:hover {
     height: 14px;
   }
 }
+
+
+/* Force les icônes sociales au-dessus de tout */
+.hero-socials {
+  position: relative;
+  z-index: 9999;
+  pointer-events: auto;
+}
+
+.hero-socials .social-link {
+  position: relative;
+  z-index: 10000;
+  pointer-events: auto;
+  cursor: pointer;
+}
+
+model-viewer {
+  pointer-events: none;
+}
+
+.mobile-menu-overlay {
+  pointer-events: none;
+}
+
+.mobile-menu-overlay.active {
+  pointer-events: auto;
+}
+
+.hero-section::before,
+.hero-section::after,
+.container::before,
+.container::after {
+  pointer-events: none;
+}
