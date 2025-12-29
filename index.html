@@ -374,17 +374,21 @@
         Attiré par la création et la concrétisation d’idées, j’ai eu l’occasion de développer plusieurs projets qui reflètent mon 
         parcours, mes compétences et ma curiosité. Voici quelques exemples :
       </p>
+
+
       <div class="projects-grid">
-        <!-- Car Rent Project -->
+
+        <!-- Serveur web sécurisé sous Debian -->
         <div class="project-card" onclick="openModal('car-rent')">
           <div class="project-card-inner">
             <div class="project-image-container">
               <img src="img/Modal/Serveur web sécurisé sous Debian.png" alt="Serveur web sécurisé sous Debian" class="project-image">
             </div>
             <div class="project-info">
-              <h3 class="project-title">Serveur web sécurisé sous Debian</h3>
+              <h3 class="project-title">Serveur web sécurisé</h3>
               <p class="project-description">
-                Un serveur web sécurisé sous Debian est mis en place pour héberger un site WordPress avec un accès FTP chiffré.
+                Un serveur web sécurisé sous Debian est mis en place pour héberger un site WordPress avec un accès FTP 
+                chiffré.
               </p>
               <div class="project-technologies">
                 <span class="tech-tag" style="color: #f38b1b">#vsftpd</span>
@@ -399,7 +403,9 @@
             </div>
           </div>
         </div>
-        <!-- Job IT Project -->
+
+
+        <!-- Point d’accès Wi-Fi-->
         <div class="project-card" onclick="openModal('job-it')">
           <div class="project-card-inner">
             <div class="project-image-container">
@@ -422,26 +428,82 @@
             </div>
           </div>
         </div>
-        <!-- Trip Guide Project -->
+        <!-- Résolution d’incidents -->
         <div class="project-card" onclick="openModal('trip-guide')">
           <div class="project-card-inner">
             <div class="project-image-container">
-              <img src="img/projet.png" alt="Trip Guide" class="project-image">
+              <img src="img/Modal/glpi.png" alt="Résolution d’incidents" class="project-image">
             </div>
             <div class="project-info">
-              <h3 class="project-title">Trip Guide</h3>
+              <h3 class="project-title">Résolution d’incidents</h3>
               <p class="project-description">
-                A comprehensive travel booking platform that allows users to book flights, hotels, and rental cars, 
-                and offers curated recommendations for popular destinations.
+
+                  Dans cette simulation, la gestion des tickets d'incidents et de demandes utilisateurs a été effectuée 
+                  sur une plateforme de support technique, en traitant chaque demande selon sa priorité et complexité.
+
               </p>
               <div class="project-technologies">
-                <span class="tech-tag" style="color: #000000">#nextjs</span>
-                <span class="tech-tag" style="color: #3ECF8E">#supabase</span>
-                <span class="tech-tag" style="color: #1572B6">#css</span>
+                <span class="tech-tag" style="color: #ece8e8">#ITIL</span>
+                <span class="tech-tag" style="color: #e3d834">#Incident</span>
+                <span class="tech-tag" style="color: #1572B6">#GLPI</span>
+                <span class="tech-tag" style="color: #e20c0c">#Problème</span>
+                <span class="tech-tag" style="color: #e9702a">#Priorité</span>
+                <span class="tech-tag" style="color: #4cb61f">#Escalade hiérarchique</span>
+                <span class="tech-tag" style="color: #5c5c5f">#Impact</span>
+                <span class="tech-tag" style="color: #a410e9">...</span>
               </div>
             </div>
           </div>
         </div>
+
+        <div class="project-card">
+        <div class="project-card-inner">
+          <div class="project-image-container">
+            <img src="img/Modal/siteWeb.png" alt="Développement d'un site" class="project-image">
+          </div>
+          <div class="project-info">
+            <h3 class="project-title">Développement d'un site</h3>
+            <p class="project-description">
+              J'ai développé un clone d'un réseau social similaire à Instagram, incluant des fonctionnalités de partage de photos, de gestion de profils 
+              utilisateurs et d'interactions sociales
+            </p>
+
+            <ul class="list">
+              <li>Gestion des utilisateurs</li>
+              <li>Formulaires interactifs</li>
+              <li>Pagination</li>
+            </ul>
+            <div class="project-technologies">
+              <span class="tech-tag" style="color: #f38b1b">#HTML/CSS</span>
+              <span class="tech-tag" style="color: #8246dc9c">#PHP</span>
+              <span class="tech-tag" style="color: #9e9a2d">#MySQL</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+
+        <div class="project-card" onclick="openModal('exosquelette-assistif')">
+          <div class="project-card-inner">
+            <div class="project-image-container">
+              <img src="img/Modal/proto.png" alt="Serveur web sécurisé sous Debian" class="project-image">
+            </div>
+            <div class="project-info">
+              <h3 class="project-title">Exosquelette assistif</h3>
+              <p class="project-description">
+                Exosquelette de main assistif combinant mécanique, électronique et énergie, piloté par Arduino 
+                et servomoteurs avec capteurs de force.
+              </p>
+              <div class="project-technologies">
+                <span class="tech-tag" style="color: #9a986b">#IBD/BDD</span>
+                <span class="tech-tag" style="color: #30ec7ee4">#Développement durable</span>
+                <span class="tech-tag" style="color: #d6c8c8">#Diagramme de Gantt</span>
+                <span class="tech-tag" style="color: #06B6D4">#Arduino</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
       </div>
     </div>
   </section>
@@ -458,14 +520,14 @@
           <img src="img/Modal/Serveur web sécurisé sous Debian.png" alt="Serveur web sécurisé sous Debian" class="modal-image">
         </div>
         <div class="modal-technologies">
-          <span class="tech-badge" style="background-color: #edbb4d20; color: #f38b1b">#vsftpd</span>
-          <span class="tech-badge" style="background-color: #cf555120; color: #b72d26c0">#Apache</span>
-          <span class="tech-badge" style="background-color: #6c358520; color: #5509c79c">#PHP</span>
-          <span class="tech-badge" style="background-color: #61DAFB20; color: #e9e227">#TLS</span>
-          <span class="tech-badge" style="background-color: #47A24820; color: #47A248">#Fail2Ban</span>
-          <span class="tech-badge" style="background-color: #61DAFB20; color: #e9e227">#SSH</span>
-          <span class="tech-badge" style="background-color: #f8f8f820; color: #d6c8c8">#Certificat SSL auto-signé</span>
-          <span class="tech-badge" style="background-color: #0c47be20; color: #06B6D4">#FTP</span>
+          <span class="tech-badge" style="background-color: #00000020; color: #f38b1b">#vsftpd</span>
+          <span class="tech-badge" style="background-color: #00000020; color: #b72d26c0">#Apache</span>
+          <span class="tech-badge" style="background-color: #00000020; color: #5509c79c">#PHP</span>
+          <span class="tech-badge" style="background-color: #00000020; color: #e9e227">#TLS</span>
+          <span class="tech-badge" style="background-color: #00000020; color: #47A248">#Fail2Ban</span>
+          <span class="tech-badge" style="background-color: #00000020; color: #e9e227">#SSH</span>
+          <span class="tech-badge" style="background-color: #00000020; color: #d6c8c8">#Certificat SSL auto-signé</span>
+          <span class="tech-badge" style="background-color: #00000020; color: #06B6D4">#FTP</span>
         </div>
         <div class="modal-section">
           <h4 class="modal-section-title">À propos du projet</h4>
@@ -479,8 +541,7 @@
             dédiés, l’utilisation de clés SSH pour l’administration sans mot de passe, et la configuration d’un certificat SSL 
             auto-signé pour chiffrer le site.
           </p>
-          <br>
-          <img src="img/Modal/ftpPacketTracer.png" width="100%">
+
         </div>
         <div class="modal-actions">
           <a href="assets/Installer serveur web sur Debian.pdf" target="_blank" rel="noopener noreferrer" class="btn-primary">
@@ -512,13 +573,13 @@
         </div>
         <div class="modal-technologies">
           <span class="tech-badge" style="background-color: #00000020; color: #e9e227">#Support mode AP</span>
-          <span class="tech-badge" style="background-color: #FF6B6B20; color: #FF6B6B">#Hostapd</span>
-          <span class="tech-badge" style="background-color: #63d0dc20; color: #0f8cc1">#Wi-Fi 802.11n</span>
-          <span class="tech-badge" style="background-color: #433ee420; color: #123094">#Partage Internet</span>
-          <span class="tech-badge" style="background-color: #f4815320; color: #db6a07">#Daemon hostapd</span>
-          <span class="tech-badge" style="background-color: #CC669920; color: #a410e9">#Dnsmasq serveur</span>
+          <span class="tech-badge" style="background-color: #00000020; color: #FF6B6B">#Hostapd</span>
+          <span class="tech-badge" style="background-color: #00000020; color: #0f8cc1">#Wi-Fi 802.11n</span>
+          <span class="tech-badge" style="background-color: #00000020; color: #123094">#Partage Internet</span>
+          <span class="tech-badge" style="background-color: #00000020; color: #db6a07">#Daemon hostapd</span>
+          <span class="tech-badge" style="background-color: #00000020; color: #a410e9">#Dnsmasq serveur</span>
           <span class="tech-badge" style="background-color: #00000020; color: #e9e227">#IP forwarding</span>
-          <span class="tech-badge" style="background-color: #ec353520; color: #ee0c0c">#Mascarade & firewall</span>
+          <span class="tech-badge" style="background-color: #00000020; color: #ee0c0c">#Mascarade & firewall</span>
         </div>
         <div class="modal-section">
           <h4 class="modal-section-title">À propos du projet</h4>
@@ -531,8 +592,7 @@
             IP attribuées et le trafic réseau tout en gardant la vie privée aux utilisateurs. Cette configuration m’a permis de 
             combiner contrôle, sécurité et analyse réseau dans un environnement fonctionnel.
           </p>
-          <br>
-          <img src="img/Modal/dashboard.png" width="100%">
+          
         </div>
         <h4 class="modal-section-title">Notes pratiques & sécurité / respect de la vie privée</h4>
         <ul class="list">
@@ -562,36 +622,76 @@
       <button onclick="closeModal('trip-guide')" class="modal-close-button" aria-label="Close">
         <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-x-icon lucide-x"><path d="M18 6 6 18"/><path d="m6 6 12 12"/></svg>
       </button>
-      <div class="modal-body">
-        <h3 class="modal-title">Trip Guide</h3>
+      <div class="modal-body"> 
+        <h3 class="modal-title">Résolution d’incidents – ITIL / GLPI</h3>
         <div class="modal-image-container">
-          <img src="img/projet.png" alt="Trip Guide" class="modal-image">
+          <img src="img/Modal/glpi.png" alt="Trip Guide" class="modal-image">
         </div>
         <div class="modal-technologies">
-          <span class="tech-badge" style="background-color: #00000020; color: #000000">#nextjs</span>
-          <span class="tech-badge" style="background-color: #3ECF8E20; color: #3ECF8E">#supabase</span>
-          <span class="tech-badge" style="background-color: #1572B620; color: #1572B6">#css</span>
+          <span class="tech-badge" style="background-color: #00000020; color: #ece8e8">#ITIL</span>
+          <span class="tech-badge" style="background-color: #00000020; color: #e3d834">#Incident</span>
+          <span class="tech-badge" style="background-color: #00000020; color: #1572B6">#GLPI</span>
+          <span class="tech-badge" style="background-color: #00000020; color: #e20c0c">#Problème</span>
+          <span class="tech-badge" style="background-color: #00000020; color: #e9702a">#Priorité</span>
+          <span class="tech-badge" style="background-color: #00000020; color: #4cb61f">#Escalade hiérarchique</span>
+          <span class="tech-badge" style="background-color: #00000020; color: #5c5c5f">#Impact</span>
+          <span class="tech-badge" style="background-color: #00000020; color: #19baac">#Escalade fonctionnelle</span>
         </div>
         <div class="modal-section">
-          <h4 class="modal-section-title">About the Project</h4>
+          <h4 class="modal-section-title">À propos du projet</h4>
           <p class="modal-section-text">
-            A full-featured travel planning and booking platform that simplifies the entire travel experience. 
-            Users can search and compare flights, hotels, and car rentals from multiple providers, create custom itineraries, 
-            and discover hidden gems through AI-powered recommendations. The platform includes interactive maps, user reviews, 
-            travel guides, and a social feature to share travel experiences with friends.
+            Chaque ticket était traité en fonction du type d'utilisateur. Les tickets des utilisateurs non admin concernaient 
+            généralement des problèmes simples comme des erreurs de connexion ou des demandes de réinitialisation de mot de passe, 
+            résolus rapidement.
+          </p>
+          <br>
+          <p class="modal-section-text">
+            Les tickets des administrateurs concernaient souvent des configurations avancées nécessitant un accès 
+            plus profond. En cas de problème complexe ou urgent, j'escaladais le ticket à un technicien ou supérieur 
+            pour garantir une résolution rapide et appropriée. Utiliser des outils spécifiques pour résoudre les problèmes 
+            de manière sécurisée. Lorsque les tickets dépassaient mes compétences ou que je ne pouvais pas résoudre un 
+            problème dans un délai acceptable, j'avais recours à une méthode d'escalade hiérarchique.
+          </p>
+          <br>
+          <img src="img/Modal/ticket.png" alt="ticket" width="95%">
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+
+
+  <div id="modal-exosquelette-assistif" class="modal-overlay" onclick="closeModal('exosquelette-assistif')">
+    <div class="modal-content" onclick="event.stopPropagation()">
+      <button onclick="closeModal('exosquelette-assistif')" class="modal-close-button" aria-label="Close">
+        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-x-icon lucide-x"><path d="M18 6 6 18"/><path d="m6 6 12 12"/></svg>
+      </button>
+      <div class="modal-body">
+        <h3 class="modal-title">Conception d’un exosquelette</h3>
+        <div class="modal-image-container">
+          <img src="img/Modal/proto.png" alt="Serveur web sécurisé sous Debian" class="modal-image">
+        </div>
+        <div class="modal-technologies">
+          <span class="tech-badge" style="background-color: #00000020; color: #9a986b">#IBD/BDD</span>
+          <span class="tech-badge" style="background-color: #00000020; color: #30ec7ee4">#SSH</span>
+          <span class="tech-badge" style="background-color: #00000020; color: #d6c8c8">#Diagramme de Gantt</span>
+          <span class="tech-badge" style="background-color: #00000020; color: #06B6D4">#Arduino</span>
+        </div>
+        <div class="modal-section">
+          <h4 class="modal-section-title">À propos du projet</h4>
+          <p class="modal-section-text">
+            Le projet consistait à concevoir un exosquelette d’assistance à la préhension pour améliorer la force et 
+            la mobilité de la main. Il combine des aspects mécaniques, électroniques et énergétiques, avec un pilotage 
+            assuré par Arduino et des servomoteurs contrôlés par des capteurs de force. Le dispositif a été développé 
+            selon une démarche d’éco-conception et validé pour garantir sécurité, confort et efficacité pour l’utilisateur.
           </p>
         </div>
+
         <div class="modal-actions">
-          <a href="https://trip-guide-demo.com" target="_blank" rel="noopener noreferrer" class="btn-primary">
-            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-              <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
-              <polyline points="15 3 21 3 21 9"></polyline>
-              <line x1="10" y1="14" x2="21" y2="3"></line>
-            </svg>
-            Live Demo
-          </a>
-          <a href="https://github.com/username/trip-guide" target="_blank" rel="noopener noreferrer" class="btn-secondary">
-            View Code
+          <a href="assets/Développement d’un exosquelette.pdf" target="_blank" rel="noopener noreferrer" class="btn-secondary">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="section-icon"><path d="M12 15V3"/><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><path d="m7 10 5 5 5-5"/></svg>
+            Projet exosquelette
           </a>
         </div>
       </div>
