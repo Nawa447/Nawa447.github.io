@@ -465,7 +465,7 @@
             <h3 class="project-title">Développement d'un site</h3>
             <p class="project-description">
               J'ai développé un clone d'un réseau social similaire à Instagram, incluant des fonctionnalités de partage de photos, de gestion de profils 
-              utilisateurs et d'interactions sociales
+              utilisateurs et d'interactions sociales.
             </p>
 
             <ul class="list">
@@ -499,6 +499,33 @@
                 <span class="tech-tag" style="color: #30ec7ee4">#Développement durable</span>
                 <span class="tech-tag" style="color: #d6c8c8">#Diagramme de Gantt</span>
                 <span class="tech-tag" style="color: #06B6D4">#Arduino</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+
+        <div class="project-card" onclick="openModal('infrastructure-ad')">
+          <div class="project-card-inner">
+            <div class="project-image-container">
+              <img src="img/Modal/AD.png" alt="Serveur web sécurisé sous Debian" class="project-image">
+            </div>
+            <div class="project-info">
+              <h3 class="project-title">Sécuriser une infrastructure AD</h3>
+              <p class="project-description">
+                Conception d’un environnement Active Directory pour le domaine pipalap.net, axé sur l’organisation de 
+                l’annuaire, l’administration des comptes, la mise en œuvre de mesures de sécurité, l’audit de 
+                l’infrastructure et l’interconnexion de systèmes Windows et Linux.
+              </p>
+              <div class="project-technologies">
+                <span class="tech-tag" style="color: #9e9e9e">#Bash</span>
+                <span class="tech-tag" style="color: #f50909">#Debian</span>
+                <span class="tech-tag" style="color: #0955ef">#CIA</span>
+                <span class="tech-tag" style="color: #06B6D4">#AGDLP</span>
+                <span class="tech-tag" style="color: #fafafaa1">#3-2-1-1-0</span>
+                <span class="tech-tag" style="color: #e4b91c">#PingCastle</span>
+                <span class="tech-tag" style="color: #ffffff">#GPO</span>
+                <span class="tech-tag" style="color: #70c1cf68">#Windows Server 2025</span>
               </div>
             </div>
           </div>
@@ -656,9 +683,7 @@
   </div>
 
 
-
-
-  <div id="modal-exosquelette-assistif" class="modal-overlay" onclick="closeModal('exosquelette-assistif')">
+   <div id="modal-exosquelette-assistif" class="modal-overlay" onclick="closeModal('exosquelette-assistif')">
     <div class="modal-content" onclick="event.stopPropagation()">
       <button onclick="closeModal('exosquelette-assistif')" class="modal-close-button" aria-label="Close">
         <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-x-icon lucide-x"><path d="M18 6 6 18"/><path d="m6 6 12 12"/></svg>
@@ -692,7 +717,50 @@
         </div>
       </div>
     </div>
+  </div> 
+
+
+
+ <div id="modal-infrastructure-ad" class="modal-overlay" onclick="closeModal('infrastructure-ad')">
+    <div class="modal-content" onclick="event.stopPropagation()">
+      <button onclick="closeModal('infrastructure-ad')" class="modal-close-button" aria-label="Close">
+        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-x-icon lucide-x"><path d="M18 6 6 18"/><path d="m6 6 12 12"/></svg>
+      </button>
+      <div class="modal-body">
+        <h3 class="modal-title">Sécuriser une infrastructure AD</h3>
+        <div class="modal-image-container">
+          <img src="img/Modal/AD.png" alt="Serveur web sécurisé sous Debian" class="modal-image">
+        </div>
+        <div class="modal-technologies">
+          <span class="tech-badge" style="background-color: #00000020; color: #9e9e9e">#Bash</span>
+          <span class="tech-badge" style="background-color: #00000020; color: #f50909">#Debian</span>
+          <span class="tech-badge" style="background-color: #00000020; color: #0955ef">#CIA</span>
+          <span class="tech-badge" style="background-color: #00000020; color: #06B6D4">#AGDLP</span>
+          <span class="tech-badge" style="background-color: #00000020; color: #fafafaa1">#3-2-1-1-0</span>
+          <span class="tech-badge" style="background-color: #00000020; color: #e4b91c">#PingCastle</span>
+          <span class="tech-badge" style="background-color: #00000020; color: #ffffff">#GPO</span>
+          <span class="tech-badge" style="background-color: #00000020; color: #70c1cf68">#Windows Server 2025</span>
+        </div>
+        <div class="modal-section">
+          <h4 class="modal-section-title">À propos du projet</h4>
+          <p class="modal-section-text">
+            L’objectif principal de ce projet est le déploiement et sécurisation d’une infrastructure Active 
+            Directory pour l’entreprise pipalap.net, incluant Windows Server 2025, la gestion des utilisateurs et 
+            des droits, les politiques de sécurité, la protection contre les vulnérabilités et l’intégration de postes 
+            Linux, afin d’assurer la continuité et la fiabilité des services.
+          </p>
+        </div>
+
+        <div class="modal-actions">
+          <a href="assets/AD.pdf" target="_blank" rel="noopener noreferrer" class="btn-secondary">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="section-icon"><path d="M12 15V3"/><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><path d="m7 10 5 5 5-5"/></svg>
+            Infrastructure AD
+          </a>
+        </div>
+      </div>
+    </div>
   </div>
+
 
   <section class="contact-section" id="contact">
   <div class="projects-container">
