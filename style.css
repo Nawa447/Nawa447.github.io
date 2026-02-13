@@ -9,7 +9,7 @@ body {
   font-family: Arial, sans-serif;
   background-color: #0a0a0f;
   color: white;
-  background-image: url("img/test.png");
+  background-image: url('img/test.png');
   background-size: cover;
   background-position: center;
   background-attachment: fixed; /* L'image reste fixe lorsqu'on fait défiler la page */
@@ -40,7 +40,11 @@ a {
 /* Enhanced hamburger menu button with gradient and animations */
 .hamburger-menu {
   display: none;
-  background: linear-gradient(135deg, rgba(124, 58, 237, 0.2), rgba(167, 139, 250, 0.1));
+  background: linear-gradient(
+    135deg,
+    rgba(124, 58, 237, 0.2),
+    rgba(167, 139, 250, 0.1)
+  );
   border: 2px solid rgba(167, 139, 250, 0.3);
   border-radius: 12px;
   cursor: pointer;
@@ -51,7 +55,11 @@ a {
 }
 
 .hamburger-menu:hover {
-  background: linear-gradient(135deg, rgba(124, 58, 237, 0.3), rgba(167, 139, 250, 0.2));
+  background: linear-gradient(
+    135deg,
+    rgba(124, 58, 237, 0.3),
+    rgba(167, 139, 250, 0.2)
+  );
   border-color: rgba(167, 139, 250, 0.5);
   transform: scale(1.05);
   box-shadow: 0 4px 20px rgba(124, 58, 237, 0.4);
@@ -86,7 +94,7 @@ a {
 }
 
 .mobile-menu-overlay::before {
-  content: "";
+  content: '';
   position: absolute;
   top: -50%;
   right: -50%;
@@ -118,7 +126,11 @@ a {
   position: absolute;
   top: 24px;
   right: 24px;
-  background: linear-gradient(135deg, rgba(124, 58, 237, 0.3), rgba(167, 139, 250, 0.2));
+  background: linear-gradient(
+    135deg,
+    rgba(124, 58, 237, 0.3),
+    rgba(167, 139, 250, 0.2)
+  );
   border: 2px solid rgba(167, 139, 250, 0.4);
   border-radius: 50%;
   width: 56px;
@@ -134,7 +146,11 @@ a {
 }
 
 .mobile-menu-close:hover {
-  background: linear-gradient(135deg, rgba(124, 58, 237, 0.5), rgba(167, 139, 250, 0.3));
+  background: linear-gradient(
+    135deg,
+    rgba(124, 58, 237, 0.5),
+    rgba(167, 139, 250, 0.3)
+  );
   border-color: rgba(167, 139, 250, 0.6);
   transform: rotate(90deg) scale(1.1);
   box-shadow: 0 6px 30px rgba(124, 58, 237, 0.5);
@@ -175,7 +191,7 @@ a {
 }
 
 .mobile-nav-link::before {
-  content: "";
+  content: '';
   position: absolute;
   top: 0;
   left: -100%;
@@ -190,7 +206,7 @@ a {
 }
 
 .mobile-nav-link::after {
-  content: "";
+  content: '';
   position: absolute;
   bottom: 0;
   left: 50%;
@@ -344,8 +360,6 @@ model-viewer {
   animation: fadeInUp 1s ease-out 0.4s both;
 }
 
-
-
 /* About Section */
 .about-section {
   min-height: 100vh;
@@ -417,17 +431,18 @@ model-viewer {
   color: #ffffff;
 }
 
-
 .hero-socials {
   margin-top: -30px;
-  padding-left: 80px;              
+  padding-left: 80px;
   display: flex;
-  gap: 20px;                    
+  gap: 20px;
 }
 
 .social-link {
-  color: #854AF0;                   
-  transition: transform 0.2s ease, opacity 0.2s ease;
+  color: #854af0;
+  transition:
+    transform 0.2s ease,
+    opacity 0.2s ease;
 }
 
 .social-link:hover {
@@ -438,10 +453,9 @@ model-viewer {
 .section-icon {
   width: 20px;
   height: 24px;
-  filter: invert(32%) sepia(81%) saturate(7466%) hue-rotate(246deg) brightness(95%) contrast(90%);
+  filter: invert(32%) sepia(81%) saturate(7466%) hue-rotate(246deg) brightness(95%)
+    contrast(90%);
 }
-
-
 
 /* Formation List */
 .formation-list {
@@ -457,7 +471,7 @@ model-viewer {
 }
 
 .formation-item:not(:last-child)::after {
-  content: "";
+  content: '';
   position: absolute;
   left: 7px;
   top: 32px;
@@ -524,8 +538,6 @@ model-viewer {
   transform: translateY(-2px);
   box-shadow: 0 4px 12px rgba(124, 58, 237, 0.3);
 }
-
-
 
 .technical-skills-section {
   width: 100%;
@@ -634,7 +646,6 @@ model-viewer {
   box-shadow: 0 4px 12px rgba(124, 58, 237, 0.25);
 }
 
-
 /*timline*/
 .timeline {
   position: relative;
@@ -687,7 +698,7 @@ model-viewer {
 }
 
 .timeline::after {
-  content: "";
+  content: '';
   position: absolute;
   width: 2px;
   height: 100%;
@@ -745,7 +756,7 @@ model-viewer {
 }
 
 .list li::before {
-  content: "•";
+  content: '•';
   position: absolute;
   left: 0;
   color: #7c3aed;
@@ -841,8 +852,6 @@ model-viewer {
   box-shadow: 0 0 15px rgba(124, 58, 237, 0.3);
 }
 
-
-
 /* Projects Section */
 .projects-section {
   min-height: 100vh;
@@ -892,6 +901,12 @@ model-viewer {
   overflow: hidden;
   transition: all 0.3s ease;
   border: 1px solid rgba(167, 139, 250, 0.1);
+  background: none;
+  padding: 0;
+  text-align: left;
+  font: inherit;
+  color: inherit;
+  width: 100%;
 }
 
 .project-card:hover {
@@ -1145,7 +1160,6 @@ model-viewer {
   border-color: rgba(255, 255, 255, 0.3);
 }
 
-
 /* Contact Section */
 .contact-section {
   min-height: 100vh;
@@ -1313,7 +1327,11 @@ model-viewer {
 
 /* Footer Section */
 .footer {
-  background: linear-gradient(180deg, rgba(10, 10, 15, 0.98) 0%, rgba(5, 5, 10, 0.98) 100%);
+  background: linear-gradient(
+    180deg,
+    rgba(10, 10, 15, 0.98) 0%,
+    rgba(5, 5, 10, 0.98) 100%
+  );
   border-top: 1px solid rgba(124, 58, 237, 0.2);
   padding: 60px 20px 30px;
   margin-top: 80px;
@@ -1330,7 +1348,6 @@ model-viewer {
   gap: 40px;
   margin-bottom: 40px;
 }
-
 
 .footer-column {
   display: flex;
@@ -1418,7 +1435,7 @@ body {
   font-family: Arial, sans-serif;
   background-color: #0a0a0f;
   color: white;
-  background-image: url("img/test.png");
+  background-image: url('img/test.png');
   background-size: cover;
   background-position: center;
   background-attachment: fixed;
@@ -1488,7 +1505,11 @@ nav a:hover {
 /* Enhanced hamburger menu button with gradient and animations */
 .hamburger-menu {
   display: none;
-  background: linear-gradient(135deg, rgba(124, 58, 237, 0.2), rgba(167, 139, 250, 0.1));
+  background: linear-gradient(
+    135deg,
+    rgba(124, 58, 237, 0.2),
+    rgba(167, 139, 250, 0.1)
+  );
   border: 2px solid rgba(167, 139, 250, 0.3);
   border-radius: 12px;
   cursor: pointer;
@@ -1499,7 +1520,11 @@ nav a:hover {
 }
 
 .hamburger-menu:hover {
-  background: linear-gradient(135deg, rgba(124, 58, 237, 0.3), rgba(167, 139, 250, 0.2));
+  background: linear-gradient(
+    135deg,
+    rgba(124, 58, 237, 0.3),
+    rgba(167, 139, 250, 0.2)
+  );
   border-color: rgba(167, 139, 250, 0.5);
   transform: scale(1.05);
   box-shadow: 0 4px 20px rgba(124, 58, 237, 0.4);
@@ -1538,7 +1563,11 @@ nav a:hover {
   position: absolute;
   top: 24px;
   right: 24px;
-  background: linear-gradient(135deg, rgba(124, 58, 237, 0.3), rgba(167, 139, 250, 0.2));
+  background: linear-gradient(
+    135deg,
+    rgba(124, 58, 237, 0.3),
+    rgba(167, 139, 250, 0.2)
+  );
   border: 2px solid rgba(167, 139, 250, 0.4);
   border-radius: 50%;
   width: 56px;
@@ -1865,7 +1894,11 @@ nav a:hover {
 }
 
 .commitment-box {
-  background: linear-gradient(135deg, rgba(124, 58, 237, 0.2), rgba(167, 139, 250, 0.1));
+  background: linear-gradient(
+    135deg,
+    rgba(124, 58, 237, 0.2),
+    rgba(167, 139, 250, 0.1)
+  );
   border: 2px solid rgba(124, 58, 237, 0.4);
   border-radius: 12px;
   padding: 20px;
@@ -2034,7 +2067,7 @@ nav a:hover {
 }
 
 .security-list li::before {
-  content: "✓";
+  content: '✓';
   position: absolute;
   left: 0;
   color: #7c3aed;
@@ -2058,7 +2091,7 @@ nav a:hover {
 }
 
 .transfer-list li::before {
-  content: "•";
+  content: '•';
   position: absolute;
   left: 0;
   color: #7c3aed;
@@ -2197,12 +2230,7 @@ nav a:hover {
   transform: translateY(0);
 }
 
-
-
-
-
 /* Responsive */
-
 
 @media (max-width: 768px) {
   .projects-section,
@@ -2250,11 +2278,11 @@ nav a:hover {
     justify-content: center;
   }
 
-    /* Added responsive styles for testimonials */
+  /* Added responsive styles for testimonials */
   .testimonials-section {
     padding: 60px 20px;
   }
-    .testimonials-title {
+  .testimonials-title {
     font-size: 2.5rem;
   }
 
@@ -2308,13 +2336,13 @@ nav a:hover {
     justify-content: center;
   }
   .footer-grid {
-  display: grid;
-  grid-template-columns: 2fr 1fr 1fr; /* Three columns on desktop, first column wider */
-  gap: 40px;
-  margin-bottom: 40px;
-}
+    display: grid;
+    grid-template-columns: 2fr 1fr 1fr; /* Three columns on desktop, first column wider */
+    gap: 40px;
+    margin-bottom: 40px;
+  }
 
-.hero-socials {
+  .hero-socials {
     margin-top: -35px;
     padding-left: 40px;
     gap: 16px;
@@ -2325,7 +2353,6 @@ nav a:hover {
     width: 20px;
     height: 20px;
   }
-  
 
   .technical-skills-section {
     margin: 40px auto;
@@ -2358,10 +2385,8 @@ nav a:hover {
   .tech-skill-tag {
     font-size: 0.8rem;
     padding: 7px 12px;
-  }  
+  }
 }
-
-
 
 /* Media queries améliorées pour une meilleure responsivité */
 
@@ -2400,7 +2425,7 @@ nav a:hover {
     padding-left: 50px;
   }
 
-.hero-socials {
+  .hero-socials {
     margin-top: -40px;
     padding-left: 60px;
     gap: 18px;
@@ -2410,7 +2435,7 @@ nav a:hover {
   .social-link img {
     width: 22px;
     height: 22px;
-  }  
+  }
 
   .tech-skills-grid {
     gap: 16px;
@@ -2418,12 +2443,8 @@ nav a:hover {
 
   .tech-skill-card {
     padding: 24px 20px;
-  }  
+  }
 }
-
-
-
-
 
 /* Responsive Hero et Navigation */
 @media (max-width: 768px) {
@@ -2500,8 +2521,8 @@ nav a:hover {
   .form-row {
     grid-template-columns: 1fr;
     gap: 20px;
-  } 
-  
+  }
+
   .privacy-policy-section {
     padding: 100px 20px 60px;
   }
@@ -2524,11 +2545,8 @@ nav a:hover {
   .rights-grid,
   .retention-grid {
     grid-template-columns: 1fr;
-  }  
+  }
 }
-
-
-
 
 /* Petits mobiles */
 @media screen and (max-width: 600px) {
@@ -2617,7 +2635,6 @@ nav a:hover {
     padding: 50px 15px;
   }
 
-
   .projects-container {
     padding: 0 15px;
   }
@@ -2650,7 +2667,7 @@ nav a:hover {
   .btn-submit {
     font-size: 1rem;
     padding: 14px 28px;
-  }  
+  }
 
   .footer {
     padding: 40px 15px 20px;
@@ -2670,9 +2687,9 @@ nav a:hover {
 
   .privacy-toc {
     padding: 24px;
-  }  
+  }
 
-.hero-socials {
+  .hero-socials {
     margin-top: -30px;
     padding-left: 20px;
     gap: 14px;
@@ -2682,7 +2699,7 @@ nav a:hover {
   .social-link img {
     width: 18px;
     height: 18px;
-  }  
+  }
 }
 
 /* Très petits écrans */
@@ -2782,9 +2799,9 @@ nav a:hover {
   .security-list li,
   .transfer-list li {
     font-size: 0.95rem;
-  } 
-  
-.hero-socials {
+  }
+
+  .hero-socials {
     margin-top: -25px;
     padding-left: 15px;
     gap: 12px;
@@ -2794,7 +2811,7 @@ nav a:hover {
   .social-link img {
     width: 16px;
     height: 16px;
-  }  
+  }
 }
 
 @media (max-width: 380px) {
@@ -2810,7 +2827,6 @@ nav a:hover {
     height: 14px;
   }
 }
-
 
 /* Force les icônes sociales au-dessus de tout */
 .hero-socials {
