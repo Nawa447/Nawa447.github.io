@@ -10,13 +10,13 @@
   <body>
     <header>
       <div class="logo">
-        <a href="#home"><img src="img/logo 2.png" alt="logo" /></a>
+        <a href="#home"><img src="img/logo 2.png" alt="Johann Hassani - Accueil" /></a>
         <a href="#home"><span>Johann Hassani</span></a>
       </div>
-      <nav class="navbar" aria-label="Main Navigation">
+      <nav class="navbar" aria-label="Navigation principale">
         <ul>
-          <li><a href="#home">Home</a></li>
-          <li><a href="#about">About</a></li>
+          <li><a href="#home">Accueil</a></li>
+          <li><a href="#about">À propos</a></li>
           <li><a href="#projects">Projets</a></li>
           <li><a href="#contact">Contact</a></li>
         </ul>
@@ -44,7 +44,11 @@
 
     <!-- Added mobile menu overlay -->
     <div class="mobile-menu-overlay" id="mobile-menu">
-      <button class="mobile-menu-close" id="mobile-menu-close" aria-label="Close menu">
+      <button
+        class="mobile-menu-close"
+        id="mobile-menu-close"
+        aria-label="Fermer le menu"
+      >
         <svg
           xmlns="http://www.w3.org/2000/svg"
           width="24"
@@ -60,11 +64,11 @@
           <line x1="6" y1="6" x2="18" y2="18"></line>
         </svg>
       </button>
-      <nav class="mobile-nav" aria-label="Mobile Navigation">
+      <nav class="mobile-nav" aria-label="Navigation mobile">
         <ul>
-          <li><a href="#home" class="mobile-nav-link">Home</a></li>
-          <li><a href="#about" class="mobile-nav-link">About</a></li>
-          <li><a href="#projects" class="mobile-nav-link">Projects</a></li>
+          <li><a href="#home" class="mobile-nav-link">Accueil</a></li>
+          <li><a href="#about" class="mobile-nav-link">À propos</a></li>
+          <li><a href="#projects" class="mobile-nav-link">Projets</a></li>
           <li><a href="#contact" class="mobile-nav-link">Contact</a></li>
         </ul>
       </nav>
@@ -172,17 +176,37 @@
         <h2 class="about-title">
           À propos <span class="about-highlight">de moi</span>
         </h2>
-        <div class="about-intro">
-          <h3 class="about-subtitle">
-            Étudiant en administrateur Systèmes & Réseaux, orienté Cybersécurité
-          </h3>
-          <p class="about-description">
-            Actuellement en deuxième année de Bachelor en développement logiciel et de
-            BTS SISR à l'EPSI Toulouse, où j’étudie le développement ainsi que les
-            fondamentaux des systèmes, réseaux et cybersécurité
-          </p>
-        </div>
         <div class="about-grid">
+          <!-- Presentation Column -->
+          <div class="about-column">
+            <div class="about-section-header">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                class="section-icon"
+              >
+                <path d="M19 21v-2a4 4 0 0 0-4-4H9a4 4 0 0 0-4 4v2" />
+                <circle cx="12" cy="7" r="4" />
+              </svg>
+              <h4 class="about-section-title">Présentation</h4>
+            </div>
+            <h3 class="about-subtitle">
+              Étudiant en administrateur Systèmes & Réseaux, orienté Cybersécurité
+            </h3>
+            <p class="about-description">
+              Actuellement en deuxième année de Bachelor en développement logiciel et de
+              BTS SISR à l'EPSI Toulouse, où j’étudie le développement ainsi que les
+              fondamentaux des systèmes, réseaux et cybersécurité
+            </p>
+          </div>
+
           <!-- Formation Column -->
           <div class="about-column">
             <div class="about-section-header">
@@ -210,7 +234,7 @@
               <div class="formation-item">
                 <div class="formation-dot"></div>
                 <div class="formation-content">
-                  <h5 class="formation-title">Bachelor développement logiciel</h5>
+                  <h5 class="formation-title">Bachelor en Informatique</h5>
                   <p class="formation-school">EPSI Toulouse</p>
                   <p class="formation-date">En cours - 2027</p>
                 </div>
@@ -234,7 +258,10 @@
                 </div>
               </div>
             </div>
-            <br />
+          </div>
+
+          <!-- Certifications Column -->
+          <div class="about-column">
             <div class="about-section-header">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
@@ -266,7 +293,7 @@
               <div class="formation-item">
                 <div class="formation-dot"></div>
                 <div class="formation-content">
-                  <h5 class="formation-title">Hoctagone</h5>
+                  <h5 class="formation-title">Hacktogone</h5>
                 </div>
               </div>
               <div class="formation-item">
@@ -281,66 +308,6 @@
                   <h5 class="formation-title">Google Ads</h5>
                 </div>
               </div>
-            </div>
-          </div>
-
-          <!-- Skills Column -->
-          <div class="about-column">
-            <div class="about-section-header" style="margin-top: 32px">
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                width="24"
-                height="24"
-                viewBox="0 0 24 24"
-                fill="none"
-                stroke="currentColor"
-                stroke-width="2"
-                stroke-linecap="round"
-                stroke-linejoin="round"
-                class="section-icon"
-              >
-                <path
-                  d="M16.051 12.616a1 1 0 0 1 1.909.024l.737 1.452a1 1 0 0 0 .737.535l1.634.256a1 1 0 0 1 .588 1.806l-1.172 1.168a1 1 0 0 0-.282.866l.259 1.613a1 1 0 0 1-1.541 1.134l-1.465-.75a1 1 0 0 0-.912 0l-1.465.75a1 1 0 0 1-1.539-1.133l.258-1.613a1 1 0 0 0-.282-.866l-1.156-1.153a1 1 0 0 1 .572-1.822l1.633-.256a1 1 0 0 0 .737-.535z"
-                />
-                <path d="M8 15H7a4 4 0 0 0-4 4v2" />
-                <circle cx="10" cy="7" r="4" />
-              </svg>
-              <h4 class="about-section-title">Soft skills</h4>
-            </div>
-            <div class="skills-tags">
-              <span class="skill-tag">Esprit d'équipe</span>
-              <span class="skill-tag">Sérieux</span>
-              <span class="skill-tag">Polyvalent</span>
-              <span class="skill-tag">Adaptabilité</span>
-            </div>
-            <div class="about-section-header" style="margin-top: 32px">
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                width="24"
-                height="24"
-                viewBox="0 0 24 24"
-                fill="none"
-                stroke="currentColor"
-                stroke-width="2"
-                stroke-linecap="round"
-                stroke-linejoin="round"
-                class="section-icon"
-              >
-                <path d="M11.1 7.1a16.55 16.55 0 0 1 10.9 4" />
-                <path d="M12 12a12.6 12.6 0 0 1-8.7 5" />
-                <path d="M16.8 13.6a16.55 16.55 0 0 1-9 7.5" />
-                <path d="M20.7 17a12.8 12.8 0 0 0-8.7-5 13.3 13.3 0 0 1 0-10" />
-                <path d="M6.3 3.8a16.55 16.55 0 0 0 1.9 11.5" />
-                <circle cx="12" cy="12" r="10" />
-              </svg>
-              <h4 class="about-section-title">Loisirs</h4>
-            </div>
-            <div class="skills-tags">
-              <span class="skill-tag">Cinéma</span>
-              <span class="skill-tag">Sport (Basket, Rugby)</span>
-              <span class="skill-tag">Dessin</span>
-              <span class="skill-tag">La lecture</span>
-              <span class="skill-tag">Les jeux vidéos</span>
             </div>
           </div>
         </div>
@@ -453,6 +420,42 @@
             <span class="tech-skill-tag">Apache</span>
           </div>
         </div>
+        <!-- Soft Skills & Loisirs Card -->
+        <div class="tech-skill-card">
+          <div class="tech-card-header">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="32"
+              height="32"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              class="tech-card-icon"
+            >
+              <circle cx="12" cy="12" r="10" />
+              <path d="M12 16v-4" />
+              <path d="M12 8h.01" />
+            </svg>
+            <h4 class="tech-card-title">Soft Skills & Loisirs</h4>
+          </div>
+
+          <div class="tech-card-tags">
+            <!-- Soft Skills -->
+            <span class="tech-skill-tag">Esprit d'équipe</span>
+            <span class="tech-skill-tag">Sérieux</span>
+            <span class="tech-skill-tag">Polyvalent</span>
+            <span class="tech-skill-tag">Adaptabilité</span>
+            <!-- Loisirs -->
+            <span class="tech-skill-tag">Cinéma</span>
+            <span class="tech-skill-tag">Sport (Basket, Rugby)</span>
+            <span class="tech-skill-tag">Dessin</span>
+            <span class="tech-skill-tag">La lecture</span>
+            <span class="tech-skill-tag">Les jeux vidéos</span>
+          </div>
+        </div>
       </div>
     </section>
 
@@ -460,6 +463,38 @@
       <div class="projects-container">
         <h2 class="projects-title">Expériences</h2>
         <div class="timeline">
+          <div class="box right-box">
+            <img src="img/Oda.png" alt="ODA Alexandre" />
+            <div class="text-box">
+              <h2>Stagiaire en DevSecOps et Cybersécurité</h2>
+              <p class="job">ODA Alexandre</p>
+              <small>15 / 12 / 2025 - 27 / 02 / 2026</small>
+              <ul class="list">
+                <li>
+                  Conception d’un OS souverain : Développement d’un OS basé sur Debian
+                  (Live-Build) avec sélection minimale des paquets et génération d’ISO
+                  sécurisées et reproductibles
+                </li>
+                <li>
+                  Hardening système : Durcissement de Debian 13 (LUKS/LVM, AppArmor,
+                  USBGuard, sysctl) selon une approche deny-by-default
+                </li>
+                <li>
+                  Sécurisation low-level : Gestion de la chaîne de confiance (UEFI/BIOS,
+                  GRUB) et résolution de conflits type FrankenDebian
+                </li>
+                <li>
+                  Cloud & réseau : Déploiement PaaS sur AWS et sécurisation des accès
+                  via WireGuard
+                </li>
+                <li>IAM : Authentification SSH over GPG avec YubiKey</li>
+                <li>
+                  Sécurité offensive : Pentest et tests de résilience avec Metasploit
+                  (msfrpcd, MCP)
+                </li>
+              </ul>
+            </div>
+          </div>
           <div class="box left-box">
             <img src="img/leon.png" alt="Léon de Bruxelles" />
             <div class="text-box">
@@ -504,24 +539,6 @@
                 <li>Développement web</li>
                 <li>Gestion de produit</li>
                 <li>Affiliate marketer</li>
-              </ul>
-            </div>
-          </div>
-          <div class="box right-box">
-            <img src="img/mcdo.png" alt="McDonald's" />
-            <div class="text-box">
-              <h2>McDonald's Tlse Arc en Ciel</h2>
-              <p class="job">McDonald's</p>
-              <small>08 / 2023 - 09 / 2023</small>
-              <ul class="list">
-                <li>
-                  Préparation et assemblage de plats simples pour le service en salle
-                  selon l'ordre de commande
-                </li>
-                <li>
-                  Nettoyage des ustensiles de cuisine pour maintenir la propreté et
-                  l'efficacité dans la cuisine
-                </li>
               </ul>
             </div>
           </div>
@@ -574,7 +591,7 @@
               <div class="project-image-container">
                 <img
                   src="img/Modal/Serveur web sécurisé sous Debian.png"
-                  alt="Serveur web sécurisé sous Debian"
+                  alt=""
                   class="project-image"
                 />
               </div>
@@ -586,10 +603,10 @@
                 </p>
                 <div class="project-technologies">
                   <span class="tech-tag" style="color: #f38b1b">#vsftpd</span>
-                  <span class="tech-tag" style="color: #b72d26c0">#Apache</span>
-                  <span class="tech-tag" style="color: #5509c79c">#PHP</span>
+                  <span class="tech-tag" style="color: #b72d26">#Apache</span>
+                  <span class="tech-tag" style="color: #5509c7">#PHP</span>
                   <span class="tech-tag" style="color: #e9e227">#TLS</span>
-                  <span class="tech-tag" style="color: #06d43966">#Fail2Ban</span>
+                  <span class="tech-tag" style="color: #06d439">#Fail2Ban</span>
                   <span class="tech-tag" style="color: #e9e227">#SSH</span>
                   <span class="tech-tag" style="color: #d6c8c8"
                     >#Certificat SSL auto-signé</span
@@ -604,11 +621,7 @@
           <button class="project-card" onclick="openModal('job-it')" type="button">
             <div class="project-card-inner">
               <div class="project-image-container">
-                <img
-                  src="img/Modal/point-wifi.png"
-                  alt="Point d’accès Wi-Fi"
-                  class="project-image"
-                />
+                <img src="img/Modal/point-wifi.png" alt="" class="project-image" />
               </div>
               <div class="project-info">
                 <h3 class="project-title">Point d’accès Wi-Fi</h3>
@@ -632,11 +645,7 @@
           <button class="project-card" onclick="openModal('trip-guide')" type="button">
             <div class="project-card-inner">
               <div class="project-image-container">
-                <img
-                  src="img/Modal/glpi.png"
-                  alt="Résolution d’incidents"
-                  class="project-image"
-                />
+                <img src="img/Modal/glpi.png" alt="" class="project-image" />
               </div>
               <div class="project-info">
                 <h3 class="project-title">Résolution d’incidents</h3>
@@ -661,37 +670,6 @@
             </div>
           </button>
 
-          <button class="project-card" type="button">
-            <div class="project-card-inner">
-              <div class="project-image-container">
-                <img
-                  src="img/Modal/siteWeb.png"
-                  alt="Développement d'un site"
-                  class="project-image"
-                />
-              </div>
-              <div class="project-info">
-                <h3 class="project-title">Développement d'un site</h3>
-                <p class="project-description">
-                  J'ai développé un clone d'un réseau social similaire à Instagram,
-                  incluant des fonctionnalités de partage de photos, de gestion de
-                  profils utilisateurs et d'interactions sociales.
-                </p>
-
-                <ul class="list">
-                  <li>Gestion des utilisateurs</li>
-                  <li>Formulaires interactifs</li>
-                  <li>Pagination</li>
-                </ul>
-                <div class="project-technologies">
-                  <span class="tech-tag" style="color: #f38b1b">#HTML/CSS</span>
-                  <span class="tech-tag" style="color: #8246dc9c">#PHP</span>
-                  <span class="tech-tag" style="color: #9e9a2d">#MySQL</span>
-                </div>
-              </div>
-            </div>
-          </button>
-
           <button
             class="project-card"
             onclick="openModal('exosquelette-assistif')"
@@ -699,11 +677,7 @@
           >
             <div class="project-card-inner">
               <div class="project-image-container">
-                <img
-                  src="img/Modal/proto.png"
-                  alt="Serveur web sécurisé sous Debian"
-                  class="project-image"
-                />
+                <img src="img/Modal/proto.png" alt="" class="project-image" />
               </div>
               <div class="project-info">
                 <h3 class="project-title">Exosquelette assistif</h3>
@@ -713,7 +687,7 @@
                 </p>
                 <div class="project-technologies">
                   <span class="tech-tag" style="color: #9a986b">#IBD/BDD</span>
-                  <span class="tech-tag" style="color: #30ec7ee4"
+                  <span class="tech-tag" style="color: #30ec7e"
                     >#Développement durable</span
                   >
                   <span class="tech-tag" style="color: #d6c8c8"
@@ -732,11 +706,7 @@
           >
             <div class="project-card-inner">
               <div class="project-image-container">
-                <img
-                  src="img/Modal/AD.png"
-                  alt="Serveur web sécurisé sous Debian"
-                  class="project-image"
-                />
+                <img src="img/Modal/AD.png" alt="" class="project-image" />
               </div>
               <div class="project-info">
                 <h3 class="project-title">Sécuriser une infrastructure AD</h3>
@@ -751,12 +721,63 @@
                   <span class="tech-tag" style="color: #f50909">#Debian</span>
                   <span class="tech-tag" style="color: #0955ef">#CIA</span>
                   <span class="tech-tag" style="color: #06b6d4">#AGDLP</span>
-                  <span class="tech-tag" style="color: #fafafaa1">#3-2-1-1-0</span>
+                  <span class="tech-tag" style="color: #fafafa">#3-2-1-1-0</span>
                   <span class="tech-tag" style="color: #e4b91c">#PingCastle</span>
                   <span class="tech-tag" style="color: #ffffff">#GPO</span>
-                  <span class="tech-tag" style="color: #70c1cf68"
+                  <span class="tech-tag" style="color: #70c1cf"
                     >#Windows Server 2025</span
                   >
+                </div>
+              </div>
+            </div>
+          </button>
+
+          <!-- Infrastructure Cloud & Réseau -->
+          <button
+            class="project-card"
+            onclick="openModal('cloud-reseau')"
+            type="button"
+          >
+            <div class="project-card-inner">
+              <div class="project-image-container">
+                <img src="img/Modal/infra-cloud.png" alt="" class="project-image" />
+              </div>
+              <div class="project-info">
+                <h3 class="project-title">Infrastructure Cloud &amp; Réseau</h3>
+                <p class="project-description">
+                  Déploiement d'une infrastructure PaaS sur AWS avec sécurisation des
+                  accès via WireGuard VPN et authentification SSH over GPG avec YubiKey.
+                </p>
+                <div class="project-technologies">
+                  <span class="tech-tag" style="color: #f38b1b">#AWS</span>
+                  <span class="tech-tag" style="color: #06b6d4">#WireGuard</span>
+                  <span class="tech-tag" style="color: #4ade80">#PaaS</span>
+                  <span class="tech-tag" style="color: #2496ed">#Docker</span>
+                  <span class="tech-tag" style="color: #e97b1b">#CapRover</span>
+                  <span class="tech-tag" style="color: #a78bfa">#YubiKey</span>
+                  <span class="tech-tag" style="color: #e9e227">#SSH/GPG</span>
+                  <span class="tech-tag" style="color: #a410e9">...</span>
+                </div>
+              </div>
+            </div>
+          </button>
+
+          <!-- Développement d'un site -->
+          <button class="project-card" onclick="openModal('site-web')" type="button">
+            <div class="project-card-inner">
+              <div class="project-image-container">
+                <img src="img/Modal/siteWeb.png" alt="Développement d'un site" class="project-image">
+              </div>
+              <div class="project-info">
+                <h3 class="project-title">Développement d'un site</h3>
+                <p class="project-description">
+                  J'ai développé un clone d'un réseau social similaire à Instagram, incluant des fonctionnalités de partage de photos, de gestion de profils 
+                  utilisateurs et d'interactions sociales.
+                </p>
+                <div class="project-technologies">
+                  <span class="tech-tag" style="color: #f38b1b">#HTML/CSS</span>
+                  <span class="tech-tag" style="color: #8246dc9c">#PHP</span>
+                  <span class="tech-tag" style="color: #9e9a2d">#MySQL</span>
                 </div>
               </div>
             </div>
@@ -766,17 +787,8 @@
     </section>
 
     <!-- Début des Modals -->
-    <div
-      id="modal-car-rent"
-      class="modal-overlay"
-      role="button"
-      tabindex="0"
-      aria-label="Fermer le modal"
-      onkeydown="
-        if (event.key === 'Enter' || event.key === ' ') closeModal('car-rent');
-      "
-    >
-      <div class="modal-content">
+    <div id="modal-car-rent" class="modal-overlay">
+      <dialog class="modal-content" aria-label="Fermer le modal">
         <button
           onclick="closeModal('car-rent')"
           class="modal-close-button"
@@ -808,34 +820,16 @@
             />
           </div>
           <div class="modal-technologies">
-            <span class="tech-badge" style="background-color: #00000020; color: #f38b1b"
-              >#vsftpd</span
-            >
-            <span
-              class="tech-badge"
-              style="background-color: #00000020; color: #b72d26c0"
-              >#Apache</span
-            >
-            <span
-              class="tech-badge"
-              style="background-color: #00000020; color: #5509c79c"
-              >#PHP</span
-            >
-            <span class="tech-badge" style="background-color: #00000020; color: #e9e227"
-              >#TLS</span
-            >
-            <span class="tech-badge" style="background-color: #00000020; color: #47a248"
-              >#Fail2Ban</span
-            >
-            <span class="tech-badge" style="background-color: #00000020; color: #e9e227"
-              >#SSH</span
-            >
-            <span class="tech-badge" style="background-color: #00000020; color: #d6c8c8"
+            <span class="tech-badge" style="color: #f38b1b">#vsftpd</span>
+            <span class="tech-badge" style="color: #ff6b6b">#Apache</span>
+            <span class="tech-badge" style="color: #a78bfa">#PHP</span>
+            <span class="tech-badge" style="color: #e9e227">#TLS</span>
+            <span class="tech-badge" style="color: #4ade80">#Fail2Ban</span>
+            <span class="tech-badge" style="color: #e9e227">#SSH</span>
+            <span class="tech-badge" style="color: #d6c8c8"
               >#Certificat SSL auto-signé</span
             >
-            <span class="tech-badge" style="background-color: #00000020; color: #06b6d4"
-              >#FTP</span
-            >
+            <span class="tech-badge" style="color: #06b6d4">#FTP</span>
           </div>
           <div class="modal-section">
             <h4 class="modal-section-title">À propos du projet</h4>
@@ -905,18 +899,11 @@
             </a>
           </div>
         </div>
-      </div>
+      </dialog>
     </div>
 
-    <div
-      id="modal-job-it"
-      class="modal-overlay"
-      role="button"
-      tabindex="0"
-      aria-label="Fermer le modal"
-      onkeydown="if (event.key === 'Enter' || event.key === ' ') closeModal('job-it');"
-    >
-      <div class="modal-content">
+    <div id="modal-job-it" class="modal-overlay">
+      <dialog class="modal-content" aria-label="Fermer le modal">
         <button
           onclick="closeModal('job-it')"
           class="modal-close-button"
@@ -944,30 +931,14 @@
             <img src="img/Modal/point-wifi.png" alt="Job IT" class="modal-image" />
           </div>
           <div class="modal-technologies">
-            <span class="tech-badge" style="background-color: #00000020; color: #e9e227"
-              >#Support mode AP</span
-            >
-            <span class="tech-badge" style="background-color: #00000020; color: #ff6b6b"
-              >#Hostapd</span
-            >
-            <span class="tech-badge" style="background-color: #00000020; color: #0f8cc1"
-              >#Wi-Fi 802.11n</span
-            >
-            <span class="tech-badge" style="background-color: #00000020; color: #123094"
-              >#Partage Internet</span
-            >
-            <span class="tech-badge" style="background-color: #00000020; color: #db6a07"
-              >#Daemon hostapd</span
-            >
-            <span class="tech-badge" style="background-color: #00000020; color: #a410e9"
-              >#Dnsmasq serveur</span
-            >
-            <span class="tech-badge" style="background-color: #00000020; color: #e9e227"
-              >#IP forwarding</span
-            >
-            <span class="tech-badge" style="background-color: #00000020; color: #ee0c0c"
-              >#Mascarade & firewall</span
-            >
+            <span class="tech-badge" style="color: #e9e227">#Support mode AP</span>
+            <span class="tech-badge" style="color: #ff6b6b">#Hostapd</span>
+            <span class="tech-badge" style="color: #38bdf8">#Wi-Fi 802.11n</span>
+            <span class="tech-badge" style="color: #60a5fa">#Partage Internet</span>
+            <span class="tech-badge" style="color: #fb923c">#Daemon hostapd</span>
+            <span class="tech-badge" style="color: #c084fc">#Dnsmasq serveur</span>
+            <span class="tech-badge" style="color: #e9e227">#IP forwarding</span>
+            <span class="tech-badge" style="color: #f87171">#Mascarade & firewall</span>
           </div>
           <div class="modal-section">
             <h4 class="modal-section-title">À propos du projet</h4>
@@ -1027,24 +998,15 @@
                 <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4" />
                 <path d="m7 10 5 5 5-5" />
               </svg>
-              HostAP
+              Voir le rapport
             </a>
           </div>
         </div>
-      </div>
+      </dialog>
     </div>
 
-    <div
-      id="modal-trip-guide"
-      class="modal-overlay"
-      role="button"
-      tabindex="0"
-      aria-label="Fermer le modal"
-      onkeydown="
-        if (event.key === 'Enter' || event.key === ' ') closeModal('trip-guide');
-      "
-    >
-      <div class="modal-content">
+    <div id="modal-trip-guide" class="modal-overlay">
+      <dialog class="modal-content" aria-label="Fermer le modal">
         <button
           onclick="closeModal('trip-guide')"
           class="modal-close-button"
@@ -1072,28 +1034,16 @@
             <img src="img/Modal/glpi.png" alt="Trip Guide" class="modal-image" />
           </div>
           <div class="modal-technologies">
-            <span class="tech-badge" style="background-color: #00000020; color: #ece8e8"
-              >#ITIL</span
-            >
-            <span class="tech-badge" style="background-color: #00000020; color: #e3d834"
-              >#Incident</span
-            >
-            <span class="tech-badge" style="background-color: #00000020; color: #1572b6"
-              >#GLPI</span
-            >
-            <span class="tech-badge" style="background-color: #00000020; color: #e20c0c"
-              >#Problème</span
-            >
-            <span class="tech-badge" style="background-color: #00000020; color: #e9702a"
-              >#Priorité</span
-            >
-            <span class="tech-badge" style="background-color: #00000020; color: #4cb61f"
+            <span class="tech-badge" style="color: #ece8e8">#ITIL</span>
+            <span class="tech-badge" style="color: #e3d834">#Incident</span>
+            <span class="tech-badge" style="color: #38bdf8">#GLPI</span>
+            <span class="tech-badge" style="color: #f87171">#Problème</span>
+            <span class="tech-badge" style="color: #fb923c">#Priorité</span>
+            <span class="tech-badge" style="color: #4ade80"
               >#Escalade hiérarchique</span
             >
-            <span class="tech-badge" style="background-color: #00000020; color: #5c5c5f"
-              >#Impact</span
-            >
-            <span class="tech-badge" style="background-color: #00000020; color: #19baac"
+            <span class="tech-badge" style="color: #a0a0b8">#Impact</span>
+            <span class="tech-badge" style="color: #19baac"
               >#Escalade fonctionnelle</span
             >
           </div>
@@ -1120,21 +1070,11 @@
             <img src="img/Modal/ticket.png" alt="ticket" width="95%" />
           </div>
         </div>
-      </div>
+      </dialog>
     </div>
 
-    <div
-      id="modal-exosquelette-assistif"
-      class="modal-overlay"
-      role="button"
-      tabindex="0"
-      aria-label="Fermer le modal"
-      onkeydown="
-        if (event.key === 'Enter' || event.key === ' ')
-          closeModal('exosquelette-assistif');
-      "
-    >
-      <div class="modal-content">
+    <div id="modal-exosquelette-assistif" class="modal-overlay">
+      <dialog class="modal-content" aria-label="Fermer le modal">
         <button
           onclick="closeModal('exosquelette-assistif')"
           class="modal-close-button"
@@ -1166,20 +1106,10 @@
             />
           </div>
           <div class="modal-technologies">
-            <span class="tech-badge" style="background-color: #00000020; color: #9a986b"
-              >#IBD/BDD</span
-            >
-            <span
-              class="tech-badge"
-              style="background-color: #00000020; color: #30ec7ee4"
-              >#SSH</span
-            >
-            <span class="tech-badge" style="background-color: #00000020; color: #d6c8c8"
-              >#Diagramme de Gantt</span
-            >
-            <span class="tech-badge" style="background-color: #00000020; color: #06b6d4"
-              >#Arduino</span
-            >
+            <span class="tech-badge" style="color: #d4d483">#IBD/BDD</span>
+            <span class="tech-badge" style="color: #30ec7e">#SSH</span>
+            <span class="tech-badge" style="color: #d6c8c8">#Diagramme de Gantt</span>
+            <span class="tech-badge" style="color: #06b6d4">#Arduino</span>
           </div>
           <div class="modal-section">
             <h4 class="modal-section-title">À propos du projet</h4>
@@ -1217,24 +1147,15 @@
                 <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4" />
                 <path d="m7 10 5 5 5-5" />
               </svg>
-              Projet exosquelette
+              Voir le rapport
             </a>
           </div>
         </div>
-      </div>
+      </dialog>
     </div>
 
-    <div
-      id="modal-infrastructure-ad"
-      class="modal-overlay"
-      role="button"
-      tabindex="0"
-      aria-label="Fermer le modal"
-      onkeydown="
-        if (event.key === 'Enter' || event.key === ' ') closeModal('infrastructure-ad');
-      "
-    >
-      <div class="modal-content">
+    <div id="modal-infrastructure-ad" class="modal-overlay">
+      <dialog class="modal-content" aria-label="Fermer le modal">
         <button
           onclick="closeModal('infrastructure-ad')"
           class="modal-close-button"
@@ -1266,34 +1187,14 @@
             />
           </div>
           <div class="modal-technologies">
-            <span class="tech-badge" style="background-color: #00000020; color: #9e9e9e"
-              >#Bash</span
-            >
-            <span class="tech-badge" style="background-color: #00000020; color: #f50909"
-              >#Debian</span
-            >
-            <span class="tech-badge" style="background-color: #00000020; color: #0955ef"
-              >#CIA</span
-            >
-            <span class="tech-badge" style="background-color: #00000020; color: #06b6d4"
-              >#AGDLP</span
-            >
-            <span
-              class="tech-badge"
-              style="background-color: #00000020; color: #fafafaa1"
-              >#3-2-1-1-0</span
-            >
-            <span class="tech-badge" style="background-color: #00000020; color: #e4b91c"
-              >#PingCastle</span
-            >
-            <span class="tech-badge" style="background-color: #00000020; color: #ffffff"
-              >#GPO</span
-            >
-            <span
-              class="tech-badge"
-              style="background-color: #00000020; color: #70c1cf68"
-              >#Windows Server 2025</span
-            >
+            <span class="tech-badge" style="color: #c0c0c0">#Bash</span>
+            <span class="tech-badge" style="color: #f87171">#Debian</span>
+            <span class="tech-badge" style="color: #6b9fff">#CIA</span>
+            <span class="tech-badge" style="color: #06b6d4">#AGDLP</span>
+            <span class="tech-badge" style="color: #fafafa">#3-2-1-1-0</span>
+            <span class="tech-badge" style="color: #e4b91c">#PingCastle</span>
+            <span class="tech-badge" style="color: #ffffff">#GPO</span>
+            <span class="tech-badge" style="color: #70c1cf">#Windows Server 2025</span>
           </div>
           <div class="modal-section">
             <h4 class="modal-section-title">À propos du projet</h4>
@@ -1330,11 +1231,153 @@
                 <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4" />
                 <path d="m7 10 5 5 5-5" />
               </svg>
-              Infrastructure AD
+              Voir le rapport
             </a>
           </div>
         </div>
-      </div>
+      </dialog>
+    </div>
+
+    <!-- Modal Infrastructure Cloud & Réseau -->
+    <div id="modal-cloud-reseau" class="modal-overlay">
+      <dialog class="modal-content" aria-label="Fermer le modal">
+        <button
+          onclick="closeModal('cloud-reseau')"
+          class="modal-close-button"
+          aria-label="Close"
+        >
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="24"
+            height="24"
+            viewBox="0 0 24 24"
+            fill="none"
+            stroke="currentColor"
+            stroke-width="2"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            class="lucide lucide-x-icon lucide-x"
+          >
+            <path d="M18 6 6 18" />
+            <path d="m6 6 12 12" />
+          </svg>
+        </button>
+        <div class="modal-body">
+          <h3 class="modal-title">Infrastructure Cloud &amp; Réseau</h3>
+          <div class="modal-image-container">
+            <img
+              src="img/Modal/infra-cloud.png"
+              alt="Infrastructure Cloud et Réseau"
+              class="modal-image"
+            />
+          </div>
+          <div class="modal-technologies">
+            <span class="tech-badge" style="color: #f38b1b">#AWS</span>
+            <span class="tech-badge" style="color: #06b6d4">#WireGuard</span>
+            <span class="tech-badge" style="color: #4ade80">#PaaS</span>
+            <span class="tech-badge" style="color: #2496ed">#Docker</span>
+            <span class="tech-badge" style="color: #e97b1b">#CapRover</span>
+            <span class="tech-badge" style="color: #a78bfa">#YubiKey</span>
+            <span class="tech-badge" style="color: #e9e227">#SSH/GPG</span>
+            <span class="tech-badge" style="color: #f87171">#VPN</span>
+            <span class="tech-badge" style="color: #60a5fa">#IAM</span>
+            <span class="tech-badge" style="color: #34d399">#EC2</span>
+          </div>
+          <div class="modal-section">
+            <h4 class="modal-section-title">À propos du projet</h4>
+            <p class="modal-section-text">
+              Déploiement d'une infrastructure PaaS sur AWS avec sécurisation des accès
+              distants via un tunnel WireGuard. L'authentification SSH est renforcée par
+              GPG avec une clé YubiKey matérielle, garantissant une chaîne de confiance
+              end-to-end. Ce projet couvre la configuration des instances EC2, la
+              gestion des règles de sécurité réseau (Security Groups), le routage VPN et
+              la mise en place d'une politique IAM stricte.
+            </p>
+          </div>
+          <div class="modal-actions">
+            <a
+              href="assets/AWS.pdf"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="btn-primary"
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                class="section-icon"
+              >
+                <path d="M12 15V3" />
+                <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4" />
+                <path d="m7 10 5 5 5-5" />
+              </svg>
+              Voir le rapport
+            </a>
+          </div>
+        </div>
+      </dialog>
+    </div>
+
+    <!-- Modal Développement d'un site -->
+    <div id="modal-site-web" class="modal-overlay">
+      <dialog class="modal-content" aria-label="Fermer le modal">
+        <button
+          onclick="closeModal('site-web')"
+          class="modal-close-button"
+          aria-label="Close"
+        >
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="24"
+            height="24"
+            viewBox="0 0 24 24"
+            fill="none"
+            stroke="currentColor"
+            stroke-width="2"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            class="lucide lucide-x-icon lucide-x"
+          >
+            <path d="M18 6 6 18" />
+            <path d="m6 6 12 12" />
+          </svg>
+        </button>
+        <div class="modal-body">
+          <h3 class="modal-title">Développement d'un site</h3>
+          <div class="modal-image-container">
+            <img
+              src="img/Modal/siteWeb.png"
+              alt="Développement d'un site"
+              class="modal-image"
+            />
+          </div>
+          <div class="modal-technologies">
+            <span class="tech-badge" style="color: #f38b1b">#HTML/CSS</span>
+            <span class="tech-badge" style="color: #8246dc9c">#PHP</span>
+            <span class="tech-badge" style="color: #9e9a2d">#MySQL</span>
+          </div>
+          <div class="modal-section">
+            <h4 class="modal-section-title">À propos du projet</h4>
+            <p class="modal-section-text">
+              J'ai développé un clone d'un réseau social similaire à Instagram, incluant des fonctionnalités de partage de photos, de gestion de profils 
+              utilisateurs et d'interactions sociales. Ce projet m'a permis de mettre en pratique mes compétences en développement web full-stack.
+            </p>
+            <br />
+            <ul class="list">
+              <li>Gestion des utilisateurs (inscription, connexion, profils)</li>
+              <li>Formulaires interactifs pour le partage de contenu</li>
+              <li>Mise en place d'une pagination pour l'affichage des posts</li>
+              <li>Interaction avec une base de données MySQL</li>
+            </ul>
+          </div>
+        </div>
+      </dialog>
     </div>
 
     <section class="contact-section" id="contact">
@@ -1512,8 +1555,8 @@
           <div class="footer-column">
             <h3 class="footer-heading">Navigation</h3>
             <ul class="footer-links">
-              <li><a href="#home">Home</a></li>
-              <li><a href="#about">About</a></li>
+              <li><a href="#home">Accueil</a></li>
+              <li><a href="#about">À propos</a></li>
               <li><a href="#projects">Projets</a></li>
               <li><a href="#contact">Contact</a></li>
             </ul>

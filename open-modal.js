@@ -68,12 +68,12 @@ if (mobileMenuClose) {
 }
 
 // Close mobile menu when clicking on a link
-mobileNavLinks.forEach((link) => {
+for (const link of mobileNavLinks) {
   link.addEventListener('click', () => {
     mobileMenu.classList.remove('active');
     document.body.style.overflow = 'auto';
   });
-});
+}
 
 // Close mobile menu when clicking outside
 mobileMenu.addEventListener('click', (e) => {
@@ -113,7 +113,7 @@ if (contactForm) {
     btnText.textContent = 'Envoi en cours...';
 
     try {
-      const response = await emailjs.send('service_29uh90c', 'template_69pdnln', {
+      await emailjs.send('service_29uh90c', 'template_69pdnln', {
         from_name: formData.name,
         from_email: formData.email,
         subject: formData.subject,
