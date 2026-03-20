@@ -19,6 +19,9 @@
           <li><a href="#about">À propos</a></li>
           <li><a href="#projects">Projets</a></li>
           <li><a href="#contact">Contact</a></li>
+          <li>
+            <a href="assets/Tableau de synthèse.pdf">Tableau de synthèse</a>
+          </li>
         </ul>
       </nav>
       <!-- Added hamburger menu button for mobile -->
@@ -70,6 +73,9 @@
           <li><a href="#about" class="mobile-nav-link">À propos</a></li>
           <li><a href="#projects" class="mobile-nav-link">Projets</a></li>
           <li><a href="#contact" class="mobile-nav-link">Contact</a></li>
+          <li>
+            <a href="assets/Tableau de synthèse.pdf">Tableau de synthèse</a>
+          </li>
         </ul>
       </nav>
     </div>
@@ -234,8 +240,10 @@
               <div class="formation-item">
                 <div class="formation-dot"></div>
                 <div class="formation-content">
-                  <h5 class="formation-title">Bachelor en Informatique</h5>
-                  <p class="formation-school">EPSI Toulouse</p>
+                  <h5 class="formation-title">Bachelor ASRBD</h5>
+                  <p class="formation-school">
+                    Administrateur Systèmes, Réseaux et Bases de Données
+                  </p>
                   <p class="formation-date">En cours - 2027</p>
                 </div>
               </div>
@@ -287,7 +295,13 @@
                 <div class="formation-dot"></div>
                 <div class="formation-content">
                   <h5 class="formation-title">CCNA</h5>
-                  <p class="formation-date">En cours - 2026</p>
+                  <p class="formation-date">En cours</p>
+                </div>
+              </div>
+              <div class="formation-item">
+                <div class="formation-dot"></div>
+                <div class="formation-content">
+                  <h5 class="formation-title">EBIOS Risk Manager</h5>
                 </div>
               </div>
               <div class="formation-item">
@@ -766,18 +780,56 @@
           <button class="project-card" onclick="openModal('site-web')" type="button">
             <div class="project-card-inner">
               <div class="project-image-container">
-                <img src="img/Modal/siteWeb.png" alt="Développement d'un site" class="project-image">
+                <img
+                  src="img/Modal/siteWeb.png"
+                  alt="Développement d'un site"
+                  class="project-image"
+                />
               </div>
               <div class="project-info">
                 <h3 class="project-title">Développement d'un site</h3>
                 <p class="project-description">
-                  J'ai développé un clone d'un réseau social similaire à Instagram, incluant des fonctionnalités de partage de photos, de gestion de profils 
-                  utilisateurs et d'interactions sociales.
+                  J'ai développé un clone d'un réseau social similaire à Instagram,
+                  incluant des fonctionnalités de partage de photos, de gestion de
+                  profils utilisateurs et d'interactions sociales.
                 </p>
                 <div class="project-technologies">
                   <span class="tech-tag" style="color: #f38b1b">#HTML/CSS</span>
                   <span class="tech-tag" style="color: #8246dc9c">#PHP</span>
                   <span class="tech-tag" style="color: #9e9a2d">#MySQL</span>
+                </div>
+              </div>
+            </div>
+          </button>
+
+          <!-- Dynfi -->
+          <button class="project-card" onclick="openModal('dynfi')" type="button">
+            <div class="project-card-inner">
+              <div class="project-image-container">
+                <img
+                  src="img/Modal/dynfi.png"
+                  alt="Nouveau Projet"
+                  class="project-image"
+                />
+              </div>
+              <div class="project-info">
+                <h3 class="project-title">DynFi HA & Monitoring</h3>
+                <p class="project-description">
+                  Une architecture réseau hautement disponible via deux pare-feu DynFi
+                  virtualisés. Grâce aux protocoles CARP et PFSYNC, le système assure un
+                  basculement automatique sans coupure entre un serveur Maître et un
+                  Backup.
+                </p>
+                <div class="project-technologies">
+                  <span class="tech-tag" style="color: #f38b1b">#Ntopng</span>
+                  <span class="tech-tag" style="color: #5ba4cf">#Dynfi</span>
+                  <span class="tech-tag" style="color: #38bdf8">#pfsync</span>
+                  <span class="tech-tag" style="color: #4ade80">#carp</span>
+                  <span class="tech-tag" style="color: #fbbf24"
+                    >#Haute disponibilité</span
+                  >
+                  <span class="tech-tag" style="color: #a78bfa">#Redondance</span>
+                  <span class="tech-tag" style="color: #a410e9">...</span>
                 </div>
               </div>
             </div>
@@ -1365,8 +1417,10 @@
           <div class="modal-section">
             <h4 class="modal-section-title">À propos du projet</h4>
             <p class="modal-section-text">
-              J'ai développé un clone d'un réseau social similaire à Instagram, incluant des fonctionnalités de partage de photos, de gestion de profils 
-              utilisateurs et d'interactions sociales. Ce projet m'a permis de mettre en pratique mes compétences en développement web full-stack.
+              J'ai développé un clone d'un réseau social similaire à Instagram, incluant
+              des fonctionnalités de partage de photos, de gestion de profils
+              utilisateurs et d'interactions sociales. Ce projet m'a permis de mettre en
+              pratique mes compétences en développement web full-stack.
             </p>
             <br />
             <ul class="list">
@@ -1375,6 +1429,108 @@
               <li>Mise en place d'une pagination pour l'affichage des posts</li>
               <li>Interaction avec une base de données MySQL</li>
             </ul>
+          </div>
+        </div>
+      </dialog>
+    </div>
+
+    <!-- Modal Dynfi -->
+    <div id="modal-dynfi" class="modal-overlay">
+      <dialog class="modal-content" aria-label="Fermer le modal">
+        <button
+          onclick="closeModal('dynfi')"
+          class="modal-close-button"
+          aria-label="Close"
+        >
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="24"
+            height="24"
+            viewBox="0 0 24 24"
+            fill="none"
+            stroke="currentColor"
+            stroke-width="2"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            class="lucide lucide-x-icon lucide-x"
+          >
+            <path d="M18 6 6 18" />
+            <path d="m6 6 12 12" />
+          </svg>
+        </button>
+        <div class="modal-body">
+          <h3 class="modal-title">Dynfi</h3>
+          <div class="modal-image-container">
+            <img
+              src="img/Modal/dynfi.png"
+              alt="Description de l'image"
+              class="modal-image"
+            />
+          </div>
+          <div class="modal-technologies">
+            <span class="tech-badge" style="color: #f38b1b">#Ntopng</span>
+            <span class="tech-badge" style="color: #e0302a">#Redis</span>
+            <span class="tech-badge" style="color: #5ba4cf">#VMware</span>
+            <span class="tech-badge" style="color: #4ade80">#CARP</span>
+            <span class="tech-badge" style="color: #38bdf8">#PFSYNC</span>
+            <span class="tech-badge" style="color: #fbbf24">#Haute Disponibilité</span>
+            <span class="tech-badge" style="color: #a78bfa">#Redondance</span>
+            <span class="tech-badge" style="color: #06b6d4">#Monitoring</span>
+            <span class="tech-badge" style="color: #f472b6">#nProbe</span>
+            <span class="tech-badge" style="color: #d6c8c8">#LAN / WAN</span>
+          </div>
+          <div class="modal-section">
+            <h4 class="modal-section-title">À propos du projet</h4>
+            <p class="modal-section-text">
+              Ce projet consiste en la conception et le déploiement d'une infrastructure
+              réseau résiliente et sécurisée reposant sur la solution française de
+              pare-feu DynFi. L'objectif principal était de garantir une continuité de
+              service totale (Haute Disponibilité) pour un réseau local, tout en
+              intégrant des outils d'analyse de flux en temps réel.
+            </p>
+            <br />
+            <ul class="list">
+              <li>
+                Défis relevés : Éliminer tout point de défaillance unique (SPOF) en
+                assurant un basculement automatique et invisible pour l'utilisateur,
+                sans perte de session.
+              </li>
+              <li>
+                Solutions apportées : Mise en place d'un cluster DynFi (VMware) avec les
+                protocoles CARP (redondance IP) et PFSYNC (synchronisation), complété
+                par une pile de monitoring ntopng / nProbe / Redis.
+              </li>
+              <li>
+                Résultats obtenus : Une infrastructure résiliente avec basculement
+                instantané et une visibilité totale sur les flux réseau en temps réel.
+              </li>
+            </ul>
+          </div>
+          <div class="modal-actions">
+            <a
+              href="assets/Firewall.pdf"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="btn-primary"
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                class="section-icon"
+              >
+                <path d="M12 15V3" />
+                <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4" />
+                <path d="m7 10 5 5 5-5" />
+              </svg>
+              Voir le rapport
+            </a>
           </div>
         </div>
       </dialog>
