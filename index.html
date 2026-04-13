@@ -806,6 +806,34 @@
               </div>
             </div>
           </button>
+
+          <!-- Site de chirurgie esthétique -->
+          <button class="project-card" onclick="openModal('chirurgie-esthetique')" type="button">
+            <div class="project-card-inner">
+              <div class="project-image-container">
+                <img
+                  src="img/Modal/chirurgie.png"
+                  alt="Site de chirurgie esthétique"
+                  class="project-image"
+                />
+              </div>
+              <div class="project-info">
+                <h3 class="project-title">Site de chirurgie esthétique</h3>
+                <p class="project-description">
+                  Création d'un site annuaire/répertoire des praticiens en chirurgie
+                  esthétique avec carte de France interactive et système de prise de
+                  rendez-vous.
+                </p>
+                <div class="project-technologies">
+                  <span class="tech-tag" style="color: #21759b">#WordPress</span>
+                  <span class="tech-tag" style="color: #92003b">#Elementor</span>
+                  <span class="tech-tag" style="color: #06b6d4">#Calendly</span>
+                  <span class="tech-tag" style="color: #4ade80">#jQuery</span>
+                  <span class="tech-tag" style="color: #a410e9">...</span>
+                </div>
+              </div>
+            </div>
+          </button>
         </div>
       </div>
     </section>
@@ -1092,15 +1120,6 @@
             </p>
             <br />
             <img src="img/Modal/ticket.png" alt="ticket" width="95%" />
-          </div>
-        </div>
-      </dialog>
-    </div>
-
-                <path d="m7 10 5 5 5-5" />
-              </svg>
-              Voir le rapport
-            </a>
           </div>
         </div>
       </dialog>
@@ -1431,6 +1450,89 @@
               </svg>
               Voir le rapport
             </a>
+          </div>
+        </div>
+      </dialog>
+    </div>
+
+    <!-- Modal Site de chirurgie esthétique -->
+    <div id="modal-chirurgie-esthetique" class="modal-overlay">
+      <dialog class="modal-content" aria-label="Fermer le modal">
+        <button
+          onclick="closeModal('chirurgie-esthetique')"
+          class="modal-close-button"
+          aria-label="Close"
+        >
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="24"
+            height="24"
+            viewBox="0 0 24 24"
+            fill="none"
+            stroke="currentColor"
+            stroke-width="2"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            class="lucide lucide-x-icon lucide-x"
+          >
+            <path d="M18 6 6 18" />
+            <path d="m6 6 12 12" />
+          </svg>
+        </button>
+        <div class="modal-body">
+          <h3 class="modal-title">Site de chirurgie esthétique – Top One Position</h3>
+          <div class="modal-image-container">
+            <img
+              src="img/Modal/chirurgie.png"
+              alt="Site de chirurgie esthétique"
+              class="modal-image"
+            />
+          </div>
+          <div class="modal-technologies">
+            <span class="tech-badge" style="color: #21759b">#WordPress</span>
+            <span class="tech-badge" style="color: #92003b">#Elementor</span>
+            <span class="tech-badge" style="color: #06b6d4">#Calendly</span>
+            <span class="tech-badge" style="color: #4ade80">#jQuery</span>
+            <span class="tech-badge" style="color: #e9e227">#CSS personnalisé</span>
+            <span class="tech-badge" style="color: #f472b6">#Slider Revolution</span>
+            <span class="tech-badge" style="color: #a78bfa">#Figma</span>
+            <span class="tech-badge" style="color: #fb923c">#draw.io</span>
+          </div>
+
+          <div class="modal-section">
+            <h4 class="modal-section-title">Outils et technologies utilisés</h4>
+            <p class="modal-section-text">
+              Ce projet a été réalisé durant mon stage chez <strong>Top One Position</strong>.
+              Il repose principalement sur <strong>WordPress</strong> pour sa rapidité de déploiement.
+            </p>
+            <br>
+            <p class="modal-section-text">
+              Création d'un site complet de type <strong>annuaire / répertoire des praticiens</strong>
+              en chirurgie esthétique, conçu pour générer des <em>leads</em> (demandes de
+              rendez-vous) à revendre aux chirurgiens partenaires.
+            </p>
+            <br />
+            <ul class="list">
+              <li>
+                <strong>Elementor</strong> : Constructeur de pages visuel (glisser-déposer) pour
+                concevoir les mises en page sans écrire de code
+              </li>
+              <li>
+                <strong>Slider Revolution</strong> : Création de carrousels d'images et de vidéos
+                interactifs pour dynamiser l'accueil du site
+              </li>
+              <li>
+                <strong>Interactive Geo Maps</strong> : Intégration d'une carte de France interactive
+                classant les praticiens par régions et départements
+              </li>
+              <li>
+                <strong>Calendly</strong> : Prise de rendez-vous directement intégrée au site pour
+                faciliter la mise en relation chirurgien / patient
+              </li>
+              <li>
+                <strong>Design</strong> : Figma pour les interfaces visuelles. Draw.io pour les diagrammes UML et cas d'utilisation
+              </li>
+            </ul>
           </div>
         </div>
       </dialog>
