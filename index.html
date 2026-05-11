@@ -866,6 +866,38 @@
               </div>
             </div>
           </button>
+
+          <!-- Conception d’un OS souverain -->
+          <button
+            class="project-card"
+            onclick="openModal('os-souverain')"
+            type="button"
+          >
+            <div class="project-card-inner">
+              <div class="project-image-container">
+                <img
+                  src="img/Modal/os-souverain.png"
+                  alt="Conception d’un OS souverain"
+                  class="project-image"
+                />
+              </div>
+              <div class="project-info">
+                <h3 class="project-title">Conception d’un OS souverain</h3>
+                <p class="project-description">
+                  Développement d’un OS basé sur Debian (Live-Build) avec sélection
+                  minimale des paquets et génération d’ISO sécurisées et reproductibles.
+                </p>
+                <div class="project-technologies">
+                  <span class="tech-tag" style="color: #f38b1b">#Debian</span>
+                  <span class="tech-tag" style="color: #4ade80">#Live-Build</span>
+                  <span class="tech-tag" style="color: #38bdf8">#Hardening</span>
+                  <span class="tech-tag" style="color: #fbbf24">#ISO</span>
+                  <span class="tech-tag" style="color: #ff4444">#NIST</span>
+                  <span class="tech-tag" style="color: #a78bfa">#ISO27001</span>
+                </div>
+              </div>
+            </div>
+          </button>
         </div>
       </div>
     </section>
@@ -1711,6 +1743,85 @@ python3 -m venv venv
               </svg>
               Voir le rapport
             </a>
+          </div>
+        </div>
+      </dialog>
+    </div>
+
+    <!-- Modal OS Souverain -->
+    <div id="modal-os-souverain" class="modal-overlay">
+      <dialog class="modal-content" aria-label="Fermer le modal">
+        <button
+          onclick="closeModal('os-souverain')"
+          class="modal-close-button"
+          aria-label="Close"
+        >
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="24"
+            height="24"
+            viewBox="0 0 24 24"
+            fill="none"
+            stroke="currentColor"
+            stroke-width="2"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            class="lucide lucide-x-icon lucide-x"
+          >
+            <path d="M18 6 6 18" />
+            <path d="m6 6 12 12" />
+          </svg>
+        </button>
+        <div class="modal-body">
+          <h3 class="modal-title">Conception d’un OS souverain basé sur Debian</h3>
+          <div class="modal-image-container">
+            <img
+              src="img/Modal/os-souverain.png"
+              alt="OS Souverain Debian"
+              class="modal-image"
+            />
+          </div>
+          <div class="modal-technologies">
+            <span class="tech-badge" style="color: #f38b1b">#Debian</span>
+            <span class="tech-badge" style="color: #4ade80">#Live-Build</span>
+            <span class="tech-badge" style="color: #38bdf8">#Hardening</span>
+            <span class="tech-badge" style="color: #fb923c">#AppArmor</span>
+            <span class="tech-badge" style="color: #f87171">#LUKS/LVM</span>
+            <span class="tech-badge" style="color: #a78bfa">#USBGuard</span>
+            <span class="tech-badge" style="color: #60a5fa">#NIST 800-53</span>
+            <span class="tech-badge" style="color: #34d399">#ISO 27001</span>
+          </div>
+
+          <div class="modal-section">
+            <h4 class="modal-section-title">À propos du projet</h4>
+            <p class="modal-section-text">
+              Développement d’un système d’exploitation souverain basé sur Debian en
+              utilisant l’outil <strong>Live-Build</strong>. Ce projet s'inscrit dans
+              une démarche de <em>Secure by Design</em>, visant à fournir une image ISO
+              sécurisée, reproductible et minimaliste, adaptée aux exigences de
+              souveraineté numérique.
+            </p>
+            <br />
+            <ul class="list">
+              <li>
+                <strong>Personnalisation :</strong> Automatisation du processus de build
+                avec des configurations spécifiques (locales, clavier, partitionnement
+                automatique).
+              </li>
+              <li>
+                <strong>Minimalisme :</strong> Sélection rigoureuse des paquets
+                critiques et suppression de tout composant non nécessaire pour réduire
+                la surface d'attaque.
+              </li>
+              <li>
+                <strong>Hardening :</strong> Durcissement du système via AppArmor,
+                chiffrement LUKS, USBGuard et optimisations sysctl.
+              </li>
+              <li>
+                <strong>Conformité :</strong> Alignement sur les standards de sécurité
+                NIST SP 800-53 et ISO 27001.
+              </li>
+            </ul>
           </div>
         </div>
       </dialog>
